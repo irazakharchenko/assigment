@@ -11,14 +11,16 @@ public class GameManager {
 
         while( c1.isAlive() && c2.isAlive()){
             if (b) {
+                System.out.println(c1.name + " turn.");
                 c1.kick(c2);
                 b = false;
-                System.out.println(c1.name + " turn.");
+
             }
             else {
+                System.out.println(c2.name + " turn.");
                 c2.kick(c1);
                 b = true;
-                System.out.println(c2.name + " turn.");
+
             }
 
             System.out.println(c1 + "\n" + c2 + "\n---------------------------");

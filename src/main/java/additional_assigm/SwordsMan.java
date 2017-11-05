@@ -22,6 +22,8 @@ public class SwordsMan extends Character{
             c.hp = 0;
         }
     }
-
-
+    @Override
+    public String toString(){
+        return name + " power: " + MIN_POWER + " - " + MAX_POWER + ", hp: " + hp ;
+    }
 }
